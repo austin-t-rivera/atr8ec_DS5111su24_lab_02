@@ -73,8 +73,8 @@ erDiagram
     courses {
         varchar course_id PK
         varchar title
+        text description_short
         bool is_active
-        text previous_course
     }
 
     instructor_assignments {

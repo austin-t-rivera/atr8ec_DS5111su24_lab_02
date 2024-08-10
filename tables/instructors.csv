@@ -1,0 +1,29 @@
+instructor_id,instructor_name,is_active
+1,Pete Alonzi,TRUE
+2,Jeffrey Woo,TRUE
+3,Judy Fox,TRUE
+4,Jeremy Bolton,TRUE
+5,Bill Basener,TRUE
+6,Marc Ruggiano,TRUE
+7,Adam Tashman,TRUE
+8,Sree Mallikarjun,TRUE
+9,Eric Tassone,TRUE
+10,Jeremy Bolton,FALSE
+11,Peter Gedeck,TRUE
+12,Eric Tassone,TRUE
+13,Abbas Kazemipour,TRUE
+14,Cait Dreisbach,TRUE
+15,Lei Xie,TRUE
+16,Bill Basener,TRUE
+17,Renee Cummings,TRUE
+18,Stephen Baek,TRUE
+19,Raf Alvarado,TRUE
+20,Teague Henry,TRUE
+21,Rich Nguyen,TRUE
+22,Jon Kropko,TRUE
+23,Nada Basit,TRUE
+24,Panagiotis Apostolellis,TRUE
+25,Mike Porter,TRUE
+26,Luis Felipe Rosado Murillo,FALSE
+27,Jason Williamson,TRUE
+28,Eric Field,TRUE
