@@ -55,7 +55,41 @@ For example, these actions should not be allowed:
       - For example, if "ds5001" were to be dropped, but then repurposed for a different class, you could maintain the old information by renaming it to "deprecated_ds5001_001", and make sure that all tables are updated with the new name. Then you could reuse it.
 
 ### 8) (5 PTS) Draw and submit a Relational Model for your project. For an example, see Beginning Database Design Solutions page 115 Figure 5-28.
-![DS_5111_Lab_2_EER.png](DS_5111_Lab_2_EER.png)
+```mermaid
+erDiagram
+    learning_outcomes {
+        int learning_outcome_id PK
+        varchar course_id
+        text description
+        bool is_active
+    }
+
+    instructors {
+        int instructor_id PK
+        varchar instructor_name
+        bool is_active
+    }
+
+    courses {
+        varchar course_id PK
+        varchar title
+        bool is_active
+        text previous_course
+    }
+
+    instructor_assignments {
+        int assignment_id PK
+        varchar term_semester
+        varchar term_year
+        varchar course_id
+        int course_section
+        int instructor_id
+    }
+
+    courses ||--o{ learning_outcomes : have
+    instructors ||--o{ instructor_assignments : have
+    courses ||--o{ instructor_assignments : have
+```
 
 ### 9) (2 PTS) Suppose you were asked if your database could also support the UVA SDS Residential MSDS Program. Explain any issues that might arise, changes to the database structure (schema), and new data that might be needed. Note you won’t actually need to support this use case for the project.
 
