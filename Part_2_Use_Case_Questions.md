@@ -1,5 +1,41 @@
 # Part 2 - Use Case Questions (Total Points: 14)
 
+```mermaid
+erDiagram
+    learning_outcomes {
+        int learning_outcome_id PK
+        varchar course_id
+        text description
+        bool is_active
+    }
+
+    instructors {
+        int instructor_id PK
+        varchar instructor_name
+        bool is_active
+    }
+
+    courses {
+        varchar course_id PK
+        varchar title
+        text description_short
+        bool is_active
+    }
+
+    instructor_assignments {
+        int assignment_id PK
+        varchar term_semester
+        varchar term_year
+        varchar course_id
+        int course_section
+        int instructor_id
+    }
+
+    courses ||--o{ learning_outcomes : have
+    instructors ||--o{ instructor_assignments : have
+    courses ||--o{ instructor_assignments : have
+```
+
 ```sql
 USE ROLE DS5111_DBT;
 USE DATABASE DS5111_SU24;
