@@ -102,7 +102,7 @@ LEFT JOIN instructors ins ON ins.instructor_id = ins_a.instructor_id
 WHERE course_id = 'ds5100'
     AND term_semester = 'Summer'
     AND term_year = 2021;
-    ```
+```
 
 
 ### 8) (1 PT) Which instructors taught in Fall 2021? Order their names alphabetically, making sure the names are unique.
